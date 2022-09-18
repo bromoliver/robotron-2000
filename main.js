@@ -1,7 +1,11 @@
-function diz_oi(nome){
-    console.log("Oi " + nome)
-    console.log(nome + ", qual eh o seu sobrenome?")
+const subtrair = document.querySelector("#subtrair")
+const somar = document.querySelector("#somar")
+const braco = document.querySelector("#braco")
 
-}
+somar.addEventListener("click", (evento) => {
+    braco.value = parseInt(braco.value) + 1
+})
 
-diz_oi("bruno")
+subtrair.addEventListener("click", (evento) => {
+    braco.value = parseInt(braco.value) -1
+})
